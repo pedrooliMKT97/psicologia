@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Efeito de Scroll na Navbar (Muda de cor ao rolar)
+    // 1. Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
-    
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -11,14 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. Animação "Reveal on Scroll" (Aparecer suavemente)
+    // 2. Reveal Animation
     const reveals = document.querySelectorAll('.reveal');
-
     function reveal() {
         const windowHeight = window.innerHeight;
-        // O elemento aparece quando está 150px acima da base da tela
-        const elementVisible = 150; 
-
+        const elementVisible = 150;
         reveals.forEach((reveal) => {
             const elementTop = reveal.getBoundingClientRect().top;
             if (elementTop < windowHeight - elementVisible) {
@@ -26,8 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    // Dispara a função ao rolar e ao carregar a página
     window.addEventListener('scroll', reveal);
-    reveal(); 
+    reveal();
+
+    // 3. FAQ Accordion Logic (NOVO)
+    const accordions = document.querySelectorAll('.accordion-header');
+
+    accordions.forEach(acc => {
+        acc.addEventListener('click', function() {
+            // Fecha os outros se quiser (opcional)
+            // accordions.forEach(item => { if(item !== this) item.classList.remove('active'); item.nextElementSibling.style.maxHeight = null; });
+
+            this.classList.toggle('active');
+            const panel = this.nextElementSibling;
+            
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    });
 });
