@@ -3,197 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bárbara Psi | Psicologia Clínica</title>
-    <meta name="description" content="Psicologia clínica humanizada. Terapia online e presencial focada em autoconhecimento e bem-estar.">
+    <title>Bárbara Psi | Psicanálise & Essência</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
     
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav id="navbar">
+    <div class="intro-overlay">
+        <h1 class="intro-logo">Bárbara<span class="italic">psi.</span></h1>
+    </div>
+
+    <div class="noise-bg"></div>
+
+    <div class="mobile-menu-overlay">
+        <div class="close-menu"><i class="ph ph-x"></i></div>
+        <ul class="mobile-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">A Profissional</a></li>
+            <li><a href="#method">Abordagem</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div>
+
+    <nav>
         <div class="container nav-container">
-            <a href="#" class="logo">Bárbara<span class="brand-highlight">psi.</span></a>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#faq">Dúvidas</a></li>
-                <li><a href="#contato" class="btn-nav">Agendar Sessão</a></li>
-            </ul>
-            <div class="menu-toggle"><i class="ph ph-list"></i></div>
+            <a href="#" class="logo">B.<span class="italic">psi</span></a>
+            <div class="desktop-links">
+                <a href="#about">Sobre</a>
+                <a href="#method">Método</a>
+                <a href="#contact" class="btn-outlined">Agendar</a>
+            </div>
+            <div class="menu-btn"><i class="ph ph-list"></i></div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container hero-wrapper">
-            <div class="hero-content reveal">
-                <span class="badge-soft">Psicologia Clínica & Psicanálise</span>
-                <h1>Reencontre a leveza de ser quem você é.</h1>
-                <p>Um espaço de escuta qualificada, livre de julgamentos, onde sua saúde mental é prioridade. Atendimento online para todo o mundo e presencial em São Paulo.</p>
-                
-                <div class="btn-group">
-                    <a href="#contato" class="btn btn-primary">
-                        Agendar Conversa Inicial <i class="ph ph-arrow-right"></i>
-                    </a>
-                    <a href="#sobre" class="btn btn-secondary">
-                        Conhecer a Bárbara
-                    </a>
-                </div>
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text reveal">
+                <p class="overline">Psicologia Clínica & Psicanálise</p>
+                <h1>O resgate da<br><span class="serif-italic">sua própria voz.</span></h1>
+                <p class="hero-desc">Um espaço de escuta qualificada para mulheres que buscam não apenas alívio, mas transformação profunda.</p>
+                <a href="#contact" class="link-arrow">Iniciar Jornada <i class="ph ph-arrow-up-right"></i></a>
             </div>
-            
-            <div class="hero-visual reveal delay-200">
-                <div class="image-frame">
-                    <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?q=80&w=1000&auto=format&fit=crop" alt="Paz e Natureza">
+            <div class="hero-img-wrapper reveal delay-200">
+                <div class="img-mask">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" alt="Retrato Bárbara Psi">
                 </div>
-                <div class="floating-badge">
-                    <i class="ph ph-heart"></i>
-                    <span>Acolhimento <br>Humanizado</span>
+                <div class="floating-caption">
+                    <span>Atendimento Online</span>
+                    <span>& Presencial (SP)</span>
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="sobre" class="about">
-        <div class="container about-wrapper">
-            <div class="about-photo reveal">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" alt="Psicóloga Bárbara">
-            </div>
-            <div class="about-text reveal delay-100">
-                <h2>Olá, eu sou a Bárbara.</h2>
-                <p class="crp">Psicóloga - CRP 06/XXXXX</p>
-                <p>Minha trajetória na psicologia começou pelo desejo genuíno de compreender as profundezas da alma humana. Acredito que a terapia não é apenas sobre "curar" dores, mas sobre expandir potências.</p>
-                <p>Trabalho com uma abordagem que une a técnica científica ao calor humano, criando um vínculo seguro para que você possa explorar suas questões mais íntimas sem medo.</p>
-                
-                <ul class="qualities-list">
-                    <li><i class="ph ph-plant"></i> 10 anos de experiência clínica</li>
-                    <li><i class="ph ph-globe"></i> Pós-graduada em Psicanálise</li>
-                    <li><i class="ph ph-hand-heart"></i> Atendimento Inclusivo</li>
-                </ul>
             </div>
         </div>
     </section>
 
-    <section id="especialidades" class="services">
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-visual reveal">
+                <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1000&auto=format&fit=crop" alt="Detalhe Escritório">
+                <div class="exp-badge">
+                    <span class="number">10</span>
+                    <span class="label">Anos de<br>Experiência</span>
+                </div>
+            </div>
+            <div class="about-content reveal delay-100">
+                <h2>Muito além da<br><span class="accent-font">escuta passiva.</span></h2>
+                <p>Sou Bárbara, psicóloga e psicanalista. Minha atuação não se limita a ouvir; eu trabalho ativamente na desconstrução dos padrões que te paralisam.</p>
+                <p>Com formação sólida pela USP e especialização em Psicanálise Contemporânea, ofereço um ambiente onde sua angústia é validada e transformada em potência de vida.</p>
+                
+                <div class="signature">Bárbara S.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="method" class="services-section">
         <div class="container">
             <div class="section-header reveal">
-                <h2>Como posso te ajudar</h2>
-                <p>Áreas de foco do meu trabalho clínico.</p>
+                <h2>Áreas de Atuação</h2>
             </div>
-            
-            <div class="cards-grid">
-                <div class="service-card reveal delay-100">
-                    <div class="icon-box"><i class="ph-thin ph-brain"></i></div>
-                    <h3>Ansiedade</h3>
-                    <p>Ferramentas para lidar com o excesso de futuro e crises de ansiedade, devolvendo sua presença no agora.</p>
-                    <a href="#contato" class="card-link">Saiba mais</a>
+            <div class="services-list">
+                <div class="service-item reveal">
+                    <span class="num">01</span>
+                    <div class="svc-info">
+                        <h3>Ansiedade & Burnout</h3>
+                        <p>Para quem sente que a vida está rápida demais e o controle escapou das mãos.</p>
+                    </div>
+                    <a href="#contact" class="svc-btn"><i class="ph ph-plus"></i></a>
                 </div>
-                
-                <div class="service-card reveal delay-200">
-                    <div class="icon-box"><i class="ph-thin ph-users"></i></div>
-                    <h3>Relacionamentos</h3>
-                    <p>Compreensão de padrões afetivos, dependência emocional e construção de vínculos mais saudáveis.</p>
-                    <a href="#contato" class="card-link">Saiba mais</a>
+                <div class="service-item reveal">
+                    <span class="num">02</span>
+                    <div class="svc-info">
+                        <h3>Relacionamentos & Afeto</h3>
+                        <p>Compreensão de dependências emocionais e padrões repetitivos em parcerias.</p>
+                    </div>
+                    <a href="#contact" class="svc-btn"><i class="ph ph-plus"></i></a>
                 </div>
-                
-                <div class="service-card reveal delay-300">
-                    <div class="icon-box"><i class="ph-thin ph-star"></i></div>
-                    <h3>Autoestima</h3>
-                    <p>Resgate do amor próprio e fortalecimento da autoimagem para uma vida com mais confiança.</p>
-                    <a href="#contato" class="card-link">Saiba mais</a>
-                </div>
-
-                <div class="service-card reveal delay-400">
-                    <div class="icon-box"><i class="ph-thin ph-briefcase"></i></div>
-                    <h3>Carreira & Burnout</h3>
-                    <p>Apoio para lidar com esgotamento profissional, transição de carreira e equilíbrio vida-trabalho.</p>
-                    <a href="#contato" class="card-link">Saiba mais</a>
+                <div class="service-item reveal">
+                    <span class="num">03</span>
+                    <div class="svc-info">
+                        <h3>Autoconhecimento Profundo</h3>
+                        <p>Um mergulho na sua história para reescrever os próximos capítulos.</p>
+                    </div>
+                    <a href="#contact" class="svc-btn"><i class="ph ph-plus"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="faq-section">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Dúvidas Frequentes</h2>
-                <p>Tudo o que você precisa saber antes de começar.</p>
-            </div>
-
-            <div class="accordion reveal delay-100">
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        Como funciona a primeira sessão?
-                        <i class="ph ph-caret-down"></i>
-                    </button>
-                    <div class="accordion-body">
-                        <p>A primeira sessão é um momento de acolhimento. Vamos conversar sobre o que te trouxe à terapia, suas expectativas e eu explicarei como funciona meu método de trabalho. É um espaço para nos conhecermos.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        Você atende por convênio?
-                        <i class="ph ph-caret-down"></i>
-                    </button>
-                    <div class="accordion-body">
-                        <p>Meus atendimentos são particulares, mas emito recibo para que você possa solicitar o reembolso junto ao seu plano de saúde, caso ele ofereça essa modalidade.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        Qual a duração e frequência?
-                        <i class="ph ph-caret-down"></i>
-                    </button>
-                    <div class="accordion-body">
-                        <p>As sessões duram 50 minutos e, geralmente, ocorrem uma vez por semana. A frequência pode ser ajustada dependendo da necessidade de cada paciente.</p>
-                    </div>
-                </div>
-            </div>
+    <section class="break-section">
+        <div class="overlay"></div>
+        <div class="break-content reveal">
+            <p>"A única jornada é a interior."</p>
+            <span>— Rainer Maria Rilke</span>
         </div>
     </section>
 
-    <section id="contato" class="contact">
-        <div class="container contact-container reveal">
-            <div class="contact-box">
-                <h2>Vamos iniciar essa jornada?</h2>
-                <p>Estou à disposição para tirar suas dúvidas e agendar nosso primeiro encontro.</p>
-                
-                <div class="contact-methods">
-                    <a href="#" class="btn btn-whatsapp-large">
-                        <i class="ph ph-whatsapp-logo"></i> Chamar no WhatsApp
+    <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-text reveal">
+                <h2>Vamos conversar?</h2>
+                <p>A agenda para este mês está aberta. Entre em contato para verificar disponibilidade de horários.</p>
+                <div class="contact-links">
+                    <a href="#" class="contact-row">
+                        <i class="ph ph-whatsapp-logo"></i>
+                        <span>(11) 99999-9999</span>
                     </a>
-                    
-                    <div class="divider">ou</div>
-                    
-                    <div class="contact-details">
-                        <div class="detail-item">
-                            <i class="ph ph-envelope-simple"></i>
-                            <span>contato@barbarapsi.com.br</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="ph ph-instagram-logo"></i>
-                            <span>@barbara.psi</span>
-                        </div>
-                    </div>
+                    <a href="#" class="contact-row">
+                        <i class="ph ph-envelope-simple"></i>
+                        <span>contato@barbarapsi.com.br</span>
+                    </a>
                 </div>
+            </div>
+            <div class="contact-form-wrapper reveal delay-100">
+                <form>
+                    <div class="input-group">
+                        <label>Seu Nome</label>
+                        <input type="text" placeholder="Digite seu nome">
+                    </div>
+                    <div class="input-group">
+                        <label>Seu Telefone</label>
+                        <input type="tel" placeholder="(00) 00000-0000">
+                    </div>
+                    <button type="submit" class="btn-submit">Solicitar Contato</button>
+                </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Bárbara Psi. Todos os direitos reservados.</p>
-            <p class="disclaimer">Em caso de crise ou emergência, ligue para o CVV (188) ou procure o hospital mais próximo.</p>
+        <div class="container footer-flex">
+            <span class="logo">B.<span class="italic">psi</span></span>
+            <span class="copy">© 2026 Bárbara Psi. CRP 06/12345.</span>
         </div>
     </footer>
-
-    <a href="#" class="whatsapp-float" title="Fale comigo">
-        <i class="ph ph-whatsapp-logo"></i>
-    </a>
 
     <script src="script.js"></script>
 </body>
